@@ -1,0 +1,28 @@
+//Prime numbers between two numbers
+
+import java.util.Scanner;
+public class MyClass{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+       int b=s.nextInt();
+       int num,i;
+       for(num=a;num<b;num++){
+           
+           for( i=2;i<num;i++){
+               if(num%i==0){
+               break;
+               }
+           }
+           if(i==num){
+           System.out.println(num);
+       }
+      
+       }
+       
+       
+      
+          
+        
+    }
+}
