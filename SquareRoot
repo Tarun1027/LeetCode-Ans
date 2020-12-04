@@ -1,0 +1,14 @@
+// Square Root of a number
+import java.util.Scanner;
+import java.lang.Math;
+public class MyClass{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        double num,i=0;
+        num=s.nextInt();
+        i=Math.sqrt(num);
+        System.out.println(i);
+        
+    
+    }
+}
