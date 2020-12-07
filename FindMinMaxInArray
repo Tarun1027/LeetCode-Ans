@@ -29,7 +29,6 @@ public class MyClass{
             a[i]=s.nextInt();
         }
         findMinMax(a);
-        
-        
+       
     }
 }
