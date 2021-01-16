@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class MyClass {
+    static final int NO=256;
+    
+    static void fillChars(String s,int[] count){
+        for(int i=0;i<s.length();i++)
+        count[s.charAt(i)]++;
+    }
+    
+    static void printDups(String s){
+        int [] count=new int[NO];
+        fillChars(s,count);
+        
+        for(int i=0;i<NO;i++){
+            if(count[i]>1){
+               System.out.println((char)(i) +  
+                          ", count = " + count[i]); 
+            }
+        }
+    }
+    
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        String s;
+        s=sc.nextLine();
+        printDups(s);
+        
+        
+    
+    }
+}
+
